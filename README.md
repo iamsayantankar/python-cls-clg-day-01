@@ -2,6 +2,21 @@
 
 #### Pattern and pascal assignment python
 
+
+```txt
+   *
+   **
+   ***
+   ****
+   *****
+```
+```py
+  for i in range(1, 6):
+    print("*" * i)
+```
+
+
+
 ```txt
    *
    **
