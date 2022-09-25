@@ -40,6 +40,17 @@
    **
    *
 ```
+
+>```py
+>  for i in range(1, 10):
+>      if i > 5:
+>          print(" " * (5 - i), end="")
+>          print("*" * (10 - i))
+>      else:
+>          print(" " * (5 - i) + "*" * i)
+>```
+
+
 ```txt
        *
       **
@@ -79,11 +90,11 @@
 >```py
 >  for i in range(1, 10):
 >      if i > 5:
->          print(" " * (5 - i), end="")
+>          print(" " * (i - 5), end="")
 >          print("*" * (10 - i))
 >      else:
 >          print(" " * (5 - i) + "*" * i)
->```
+>```         print(" " * (5 - i) + "*" * i)
 
 ```txt
        *
@@ -192,14 +203,6 @@
 
 
 
->```py
->  for i in range(1, 10):
->      if i > 5:
->          print(" " * (i - 5), end="")
->          print("*" * (10 - i))
->      else:
->          print(" " * (5 - i) + "*" * i)
->```
 >```py
 >  for i in range(1, 10):
 >      if i > 5:
