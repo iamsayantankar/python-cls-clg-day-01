@@ -159,9 +159,13 @@
   >```py
   >  for i in range(1, 10):
   >      if i < 6:
-  >          print("*" * (6 - i), " " * (i * 2 - 1), "*" * (6 - i))
+  >          print("*" * (6 - i), end="")
+  >          print(" " * (i * 2 - 2), end="")
+  >          print("*" * (6 - i))
   >      else:
-  >          print("*" * (i - 4), " " * (2 * (10 - i) - 1), "*" * (i - 4))
+  >          print("*" * (i - 4), end="")
+  >          print(" " * (2 * (10 - i) - 2), end="")
+  >          print("*" * (i - 4))
   >```
 
 
@@ -173,7 +177,13 @@
       1234
      12345
   ```
-
+  >```py
+  >  for i in range(1, 6):
+  >      print(" " * (5 - i), end="")
+  >      for j in range(1, i + 1):
+  >          print(j, end="")
+  >      print("")
+  >```
 
   ```txt
          1
@@ -182,7 +192,15 @@
       1234321
      123454321
   ```
-
+  >```py
+  >  for i in range(1, 6):
+  >      print(" " * (5 - i), end="")
+  >      for j in range(1, i + 1):
+  >          print(j, end="")
+  >      for j in range(i - 1, 0, -1):
+  >          print(j, end="")
+  >      print("")
+  >```
 
   ```txt
          1
@@ -191,6 +209,15 @@
       4321234
      543212345
   ```
+  >```py
+  >  for i in range(1, 6):
+  >      print(" " * (5 - i), end="")
+  >      for j in range(i, 0, -1):
+  >          print(j, end="")
+  >      for j in range(1 + 1, i + 1):
+  >          print(j, end="")
+  >      print("")
+  >```
 
 
   ```txt
@@ -200,7 +227,19 @@
      1   4
      12345
   ```
-
+  >```py
+  >  for i in range(1, 6):
+  >      if i == 1:
+  >          print(i)
+  >      elif i < 5:
+  >          print("1", end="")
+  >          print(" " * (i - 1), end="")
+  >          print(i)
+  >      else:
+  >          for j in range(1, 6):
+  >              print(j, end="")
+  >          print("")
+  >```
 
   ```txt
          1
@@ -209,7 +248,13 @@
       4567
      56789
   ```
-
+  >```py
+  >  for i in range(1, 6):
+  >      print(" " * (5 - i), end="")
+  >      for j in range(1, i + 1):
+  >          print(j + i - 1, end="")
+  >      print("")
+  >```
 
   ```txt
          1
@@ -235,61 +280,11 @@
 
 
 
-  >```py
-  >  for i in range(1, 10):
-  >      if i < 6:
-  >          print("*" * (6 - i), end="")
-  >          print(" " * (i * 2 - 2), end="")
-  >          print("*" * (6 - i))
-  >      else:
-  >          print("*" * (i - 4), end="")
-  >          print(" " * (2 * (10 - i) - 2), end="")
-  >          print("*" * (i - 4))
-  >```
-  >```py
-  >  for i in range(1, 6):
-  >      print(" " * (5 - i), end="")
-  >      for j in range(1, i + 1):
-  >          print(j, end="")
-  >      print("")
-  >```
-  >```py
-  >  for i in range(1, 6):
-  >      print(" " * (5 - i), end="")
-  >      for j in range(1, i + 1):
-  >          print(j, end="")
-  >      for j in range(i - 1, 0, -1):
-  >          print(j, end="")
-  >      print("")
-  >```
-  >```py
-  >  for i in range(1, 6):
-  >      print(" " * (5 - i), end="")
-  >      for j in range(i, 0, -1):
-  >          print(j, end="")
-  >      for j in range(1 + 1, i + 1):
-  >          print(j, end="")
-  >      print("")
-  >```
-  >```py
-  >  for i in range(1, 6):
-  >      if i == 1:
-  >          print(i)
-  >      elif i < 5:
-  >          print("1", end="")
-  >          print(" " * (i - 1), end="")
-  >          print(i)
-  >      else:
-  >          for j in range(1, 6):
-  >              print(j, end="")
-  >          print("")
-  >```
-  >```py
-  >  for i in range(1, 6):
-  >      print(" " * (5 - i), end="")
-  >      for j in range(1, i + 1):
-  >          print(j + i - 1, end="")
-  >      print("")
-  >```
+
+
+
+
+
+
 </P>
 </details>
