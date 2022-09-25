@@ -75,7 +75,11 @@
       **
        *
 ```
-
+>```py
+>  for i in range(1, 6):
+>      print(" " * (5 - i), end="")
+>      print("*" * (i * 2 - 1))
+>```
 
 ```txt
        *
@@ -183,11 +187,7 @@
 
 
 
->```py
->  for i in range(1, 6):
->      print(" " * (5 - i), end="")
->      print("*" * (i * 2 - 1))
->```
+
 >```py
 >  for i in range(1, 10):
 >      if i > 5:
