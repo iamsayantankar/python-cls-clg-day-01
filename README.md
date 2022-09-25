@@ -1,6 +1,10 @@
 # python-cls-clg-day-01
 
 <details><summary>Pattern and pascal assignment python</summary>
+<p>
+
+#### MAKE BY Sayantan Kar...
+
 ```txt
    *
    **
@@ -278,4 +282,5 @@
 >          print(j + i - 1, end="")
 >      print("")
 >```
+</P>
 </details>
