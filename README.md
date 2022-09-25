@@ -126,7 +126,7 @@
 >```py
 >  for i in range(1, 10):
 >      if i > 5:
-?          print(" " * (i - 5), end="")
+>          print(" " * (i - 5), end="")
 >          print("*" * (2 * (10 - i) - 1))
 >      else:
 >          print(" " * (5 - i), end="")
